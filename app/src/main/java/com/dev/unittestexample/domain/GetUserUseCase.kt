@@ -8,9 +8,7 @@ import com.dev.unittestexample.data.entity.User
  * Created by wendy.yanto on 9/17/2021
  */
 
-class GetUserUseCase {
-
-    private val userDao = UserDao()
+class GetUserUseCase constructor(private val userDao: UserDao) {
 
     fun getUser(id: String): User? {
         if (id == "") {
