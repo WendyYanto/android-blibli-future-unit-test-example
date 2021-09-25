@@ -8,6 +8,7 @@
         android:id="@+id/tv_user_name_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="4dp"
         android:text="Username"
         android:textColor="@color/purple_700"
         android:textSize="16dp" />
@@ -16,13 +17,14 @@
         android:id="@+id/tv_user_name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:padding="4dp" />
 
     <TextView
         android:id="@+id/tv_user_unique_code_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
         android:text="Unique Code"
         android:textColor="@color/purple_700"
         android:textSize="16dp" />
@@ -31,5 +33,5 @@
         android:id="@+id/tv_user_unique_code_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:padding="4dp" />
 </LinearLayout>
