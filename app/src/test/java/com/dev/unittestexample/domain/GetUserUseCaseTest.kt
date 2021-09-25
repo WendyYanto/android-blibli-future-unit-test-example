@@ -16,7 +16,7 @@ import org.mockito.MockitoAnnotations
  * Created by wendy.yanto on 9/17/2021
  */
 
-class GetUserUserCaseTest {
+class GetUserUseCaseTest {
 
     @InjectMocks
     private lateinit var getUserUseCase: GetUserUseCaseImpl
