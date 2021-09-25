@@ -19,7 +19,7 @@ import org.mockito.MockitoAnnotations
 class GetUserUserCaseTest {
 
     @InjectMocks
-    private lateinit var getUserUseCase: GetUserUseCase
+    private lateinit var getUserUseCase: GetUserUseCaseImpl
 
     @Mock
     private lateinit var userDao: UserDao

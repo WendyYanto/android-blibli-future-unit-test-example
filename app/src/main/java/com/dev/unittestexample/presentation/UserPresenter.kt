@@ -1,16 +1,13 @@
 package com.dev.unittestexample.presentation
 
-import com.dev.unittestexample.domain.GetUserUseCase
-
 
 /**
- * Created by wendy.yanto on 9/17/2021
+ * Created by wendy.yanto on 9/25/2021
  */
 
-class UserPresenter(private val getUserUseCase: GetUserUseCase) {
+interface UserPresenter {
 
-    fun getUsername(id: String): String {
-        val user = getUserUseCase.getUser(id)
-        return user?.name.orEmpty()
-    }
+    fun getUsername(id: String): String
+
+    fun getUniqueCode(id: String): String
 }
