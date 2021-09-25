@@ -37,6 +37,7 @@ class GetUserUseCaseTest {
     @Test
     fun `getUser should return user with USER_ID and valid uniqueCode`() {
         Mockito.`when`(userDao.getUser("USER_ID")).thenReturn(User(id = "USER_ID"))
+
         val user = getUserUseCase.getUser("USER_ID")
 
         Assert.assertEquals(user?.id, "USER_ID")
@@ -53,6 +54,7 @@ class GetUserUseCaseTest {
 
         Assert.assertEquals(user?.id, "ID_YANTO")
         Assert.assertEquals(user?.getUniqueCode(), "YANTO_ID_YANTO_2021_at_25")
+
         Mockito.verify(userDao).getUser("ID_YANTO")
     }
 
