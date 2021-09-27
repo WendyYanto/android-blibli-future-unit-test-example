@@ -9,7 +9,7 @@ import javax.inject.Inject
  * Created by wendy.yanto on 9/17/2021
  */
 
-class GetUserUseCaseImpl @Inject constructor(private val userDao: UserDao) : GetUserCase {
+class GetUserUseCaseImpl @Inject constructor(private val userDao: UserDao) : GetUserUseCase {
 
     override fun getUser(id: String): User? {
         if (id == "") {

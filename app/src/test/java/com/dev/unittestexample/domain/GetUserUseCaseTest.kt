@@ -1,4 +1,4 @@
-package com.dev.unittestexample.data
+package com.dev.unittestexample.domain
 
 import com.dev.unittestexample.data.dao.UserDao
 import com.dev.unittestexample.data.entity.User
